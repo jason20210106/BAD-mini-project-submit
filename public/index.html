@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="student-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+        </form>
+        <div class="todo-app">
+           <h2>To-do list<img src="https://th.bing.com/th/id/OIP.bf_Um5shxy9Snj8HbRR0ZAHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7" width="40px"></h2>
+           <div class="row">
+              <label for="input-box2">Please enter your task</label>
+              <input type="text" id="input-box" placeholder="Add your text">
+              <!-- <button onclick="addTask()">Add</button> -->
+              <button onclick="addTask(), initInputtask(),updateStatus()">Add</button>
+           </div>
+           <ul id="list-container" >
+             <!-- <li class="checked">Task 1</li>
+             <li>Task 2</li>
+             <li>Task 3</li>
+             <li>Task 4</li>
+             <li>Task 5</li> -->
+           </ul>
+          
+        </div>
+        <button id="submit">submit</button>
+        <button id="reload">Reload</button>
+        <!-- <button id="redo">Redo</button> -->
+    </div>
+
+    <script src="index.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>
